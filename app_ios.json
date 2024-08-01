@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Prep for the Canadian Citizenship Test",
+    "slug": "prep_for_the_canadian_citizenship_test",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#1C0732"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "icon": "./assets/images/icon.png",
+      "supportsTablet": false,
+      "bundleIdentifier": "com.guibastos.canadian-citizenship-test-prep",
+      "buildNumber": "3"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#1C0732"
+      },
+      "package": "com.guibastos.canadian_citizenship_test",
+      "splash": {
+        "ldpi": "./assets/images/res/drawable-ldpi/splash.png",
+        "mdpi": "./assets/images/res/drawable-mdpi/splash.png",
+        "hdpi": "./assets/images/res/drawable-hdpi/splash.png",
+        "xhdpi": "./assets/images/res/drawable-xhdpi/splash.png",
+        "xxhdpi": "./assets/images/res/drawable-xxhdpi/splash.png",
+        "xxxhdpi": "./assets/images/res/drawable-xxxhdpi/splash.png",
+        "backgroundColor": "#1C0732",
+        "resizeMode": "cover"
+      },
+      "versionCode": 7
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
