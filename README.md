@@ -11,7 +11,7 @@ Canadian Citizenship Test Prep keep records of your progress, but does not keep 
 - Graph library
 
 ## Run project locally or contribute to the project:
-- Check [contributing file]('./CONTRIBUTING.md').
+- Check [contributing file]('canadian_citizenship_app/blob/master/CONTRIBUTING.md').
 
 ## Features available:
 - 400+ questions

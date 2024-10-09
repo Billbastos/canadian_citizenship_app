@@ -9,7 +9,7 @@
 ## Building
 - TODO
 
-## Deplying to Expo
+## Deploying to Expo
 - TODO
 
 ## Troubleshooting
