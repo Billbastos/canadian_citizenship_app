@@ -8,7 +8,7 @@ Canadian Citizenship Test Prep keep records of your progress, but does not keep 
 ## Technologies used:
 - React Native
 - Expo
-- Graph library
+- SVG charts (react-native-svg-charts)
 
 ## Run project locally or contribute to the project:
 - Check [contributing file]('canadian_citizenship_app/blob/master/CONTRIBUTING.md').
