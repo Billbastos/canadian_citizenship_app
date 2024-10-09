@@ -1,4 +1,4 @@
-import React, { useReducer, useContext, useEffect } from 'react';
+import React, { useReducer, useEffect } from 'react';
 import Question from './Question';
 import SelectQuestions from './SelectQuestions';
 import Badge from '../../components/Badge';
@@ -6,7 +6,7 @@ import Result from './Result';
 import * as Template from '../../components/Template';
 import { saveReport } from '../../services/report-service';
 import questionReducer from './question-reducer';
-import TimerContext from '../../context/TimeContext';
+import { useTimeContext } from '../../context/TimeContext';
 import _ from 'lodash';
 
 import data from '../../questions.json';
@@ -24,7 +24,7 @@ const initialState = {
 const Test = () => {
   const [state, dispatch] = useReducer(questionReducer, initialState);
   const { setShowTimer, setQuestions, expired, setExpired } =
-    useContext(TimerContext);
+    useTimeContext();
 
   useEffect(() => {
     setShowTimer(false);

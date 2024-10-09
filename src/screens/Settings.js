@@ -1,14 +1,14 @@
-import React, { useCallback, useContext, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { View, StyleSheet, Text, Alert, Switch, Linking } from 'react-native';
 import { clear, storeData, getData } from '../services/async-storage-service';
-import TimerContext from '../context/TimeContext';
 
 import Toast from 'react-native-root-toast';
 import * as Template from '../components/Template';
 import Button from '../components/Button';
+import { useTimeContext } from '../context/TimeContext';
 
 const Settings = () => {
-  const { setEnabled, isEnabled } = useContext(TimerContext);
+  const { setEnabled, isEnabled } = useTimeContext();
   const [isTipEnabled, setTipEnabled] = useState(false);
 
   useEffect(() => {
@@ -123,7 +123,7 @@ const Settings = () => {
             action={openURL}
             icon={{ name: 'external', size: 16, stroke: 3 }}
             overrides={{ fontSize: 16 }}
-            title={`Discovery Canada guide `}
+            title="Discovery Canada guide"
           />
         </View>
       </View>

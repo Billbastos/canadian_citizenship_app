@@ -284,11 +284,10 @@ const Report = () => {
               <ProgressCircle
                 style={{ height: 185 }}
                 progress={getPercentage()}
-                progressColor={'rgb(134, 65, 244)'}
+                progressColor="rgb(134, 65, 244)"
                 backgroundColor="#1C0732"
                 strokeWidth={8}
                 animate={true}
-                animationDuration={500}
               />
             </View>
           </View>

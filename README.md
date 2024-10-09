@@ -10,6 +10,9 @@ Canadian Citizenship Test Prep keep records of your progress, but does not keep 
 - Expo
 - Graph library
 
+## Run project locally or contribute to the project:
+- Check [contributing file]('./CONTRIBUTING.md').
+
 ## Features available:
 - 400+ questions
 - 10+ categories

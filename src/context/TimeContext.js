@@ -1,14 +1,27 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+/*
+  Could be using two separated Contexts here
+  One for context and another for dispatch using reducer
+  https://react.dev/learn/scaling-up-with-reducer-and-context
+*/
 
 const TimerContext = React.createContext({
   showTimer: false,
-  setShowTimer: () => {},
+  setShowTimer: () => { },
   expired: false,
-  setExpired: () => {},
+  setExpired: () => { },
   questions: 0,
-  setQuestions: () => {},
+  setQuestions: () => { },
   isEnabled: false,
-  setEnabled: () => {},
+  setEnabled: () => { },
 });
 
-export default TimerContext;
+const useTimeContext = () => {
+  return useContext(TimerContext)
+}
+
+export {
+  useTimeContext,
+  TimerContext as default
+}

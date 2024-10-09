@@ -1,10 +1,10 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import TimerContext from '../../context/TimeContext';
 import Icon from '../Icon';
+import { useTimeContext } from '../../context/TimeContext';
 
 const Timer = () => {
-  const { setExpired, questions } = useContext(TimerContext);
+  const { setExpired, questions } = useTimeContext();
   const [timer, setTimer] = useState(null);
   const [isEndOfTime, setEndOfTime] = useState(null);
 
